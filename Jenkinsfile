@@ -1,21 +1,11 @@
 #!groovy
-pipeline {
-    agent any
 
+pipeline {
+    agent { docker 'node:6.9.1' }
     stages {
-        stage('Build') {
+        stage('build') {
             steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                sh 'npm --version'
             }
         }
     }
