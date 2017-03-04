@@ -1,26 +1,12 @@
 {
-<<<<<<< HEAD
   "name": "continuous-integration-with-jenkins-travis-and-circleci",
   "version": "0.1.0",
   "description": "Continuous Integration Playground",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jbelmont/continuous-integration-with-jenkins-travis-and-circleci.git"
   },
-  "keywords": [
-    "Jenkins",
-    "Travis",
-    "Continuous",
-    "Integration"
-=======
-  "name": "advanced-tech-react-redux-workshop",
-  "version": "0.1.0",
-  "description": "React/Redux workshop for Advanced Tech in Wilmington",
-  "main": "index.js",
   "config": {
     "lint": "*.js routes/*.js models/*.js db/*.js config/*.js bin/www static/js/components/*.jsx static/js/actions/index.js static/js/constants/constants.js static/js/data/data.js static/js/reducers/*.js static/js/store/*.js static/js/utils/ajax.js __tests__/*.js",
     "report": "report --reporter=text-lcov"
@@ -42,30 +28,23 @@
     "lint": "eslint $npm_package_config_lint",
     "lint:fix": "eslint --fix $npm_package_config_lint",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "update:packages": "rm -rf node_modules && npm update --save-dev && npm update --save"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jbelmont/advanced-tech-in-wilmington-react-app.git"
+    "update:packages": "rm -rf node_modules && npm update --save-dev && npm update --save",
+    "docs:prepare": "gitbook install",
+    "docs:build": "npm run docs:prepare && rm -rf _book && gitbook build",
+    "docs:watch": "npm run docs:build && cd _book && git init && git commit --allow-empty -m 'Update docs' && git checkout -b gh-pages && git add . && git commit -am 'Update docs' && git push git@github.com:jbelmont/continuous-integration-with-jenkins-travis-and-circleci gh-pages --force"
   },
   "keywords": [
-    "React",
-    "Redux",
-    "Node",
-    "Express"
->>>>>>> Add my files.
+    "Jenkins",
+    "Travis",
+    "Continuous",
+    "Integration"
   ],
   "author": "Jean-Marcel Belmont",
   "license": "MIT",
   "bugs": {
-<<<<<<< HEAD
     "url": "https://github.com/jbelmont/continuous-integration-with-jenkins-travis-and-circleci/issues"
   },
-  "homepage": "https://github.com/jbelmont/continuous-integration-with-jenkins-travis-and-circleci#readme"
-=======
-    "url": "https://github.com/jbelmont/advanced-tech-in-wilmington-react-app/issues"
-  },
-  "homepage": "https://github.com/jbelmont/advanced-tech-in-wilmington-react-app#readme",
+  "homepage": "https://github.com/jbelmont/continuous-integration-with-jenkins-travis-and-circleci#readme",
   "dependencies": {
     "body-parser": "^1.16.1",
     "consolidate": "^0.14.5",
@@ -114,6 +93,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.9.0",
+    "gitbook-cli": "^2.3.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.6.1",
@@ -160,5 +140,4 @@
       "/test/"
     ]
   }
->>>>>>> Add my files.
 }
