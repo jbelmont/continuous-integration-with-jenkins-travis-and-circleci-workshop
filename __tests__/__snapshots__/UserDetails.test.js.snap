@@ -1,0 +1,20 @@
+exports[`test Test the <UserDetails /> component 1`] = `
+<div
+  className="advanced-tech-container">
+  <h2
+    className="advanced-tech-container-label">
+    <strong />
+  </h2>
+  <div
+    className="user__details-container">
+    <span
+      className="user__details-container-email" />
+    <span
+      className="user__details-container-first-name" />
+    <span
+      className="user__details-container-last-name" />
+    <span
+      className="user__details-container-gender" />
+  </div>
+</div>
+`;

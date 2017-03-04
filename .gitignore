@@ -35,3 +35,16 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+/.env
+/ca
+/rethinkdb_data/
+/npm-debug.log
+/icomoon
+/static/build
+/.vscode
+/jsConfig.json
+/coverage
+/selenium-debug.log
+/reports
+/.nyc_output
+/__test__/__snapshots__
