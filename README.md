@@ -16,4 +16,4 @@ In the `package.json` file there is a set of scripts
 
 Run `npm run` to list out all of the available scripts
 
-Go to the link
+All of the workshop concepts and instructions can be found at [Continuous Integration](https://jbelmont.github.io/continuous-integration-with-jenkins-travis-and-circleci/)
