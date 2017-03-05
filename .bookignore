@@ -9,3 +9,11 @@
 /static
 /test
 /users
+/__tests__
+/views
+/.babelrc
+/Dockerfile
+/Jenkinsfile
+/webpack.config.js
+/gulpfile.js
+/errorHandler.js
