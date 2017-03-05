@@ -48,3 +48,4 @@ jspm_packages
 /reports
 /.nyc_output
 /__test__/__snapshots__
+/_book
