@@ -7,6 +7,7 @@
   * [Reducing Risks](/docs/continuous-integration/reducingRisks.md)
   * [Building Software with Code Changes](/docs/continuous-integration/buildingSoftwareWithCodeChanges.md)
   * [CI for Database Integration](/docs/continuous-integration/ciForDatabaseIntegration.md)
+  * [Continuous Testing](/docs/continuous-integration/continuousTesting.md)
   * [Continuous Integration](/docs/continuous-integration/continuousInspection.md)
   * [Continuous Deployment](/docs/continuous-integration/continuousDeployment.md)
   * [Continuous Feedback](/docs/continuous-integration/continuousFeedback.md)
