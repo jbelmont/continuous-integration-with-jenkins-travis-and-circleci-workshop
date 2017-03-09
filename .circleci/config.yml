@@ -22,7 +22,13 @@ jobs:
           command: npm install
       - run:
           name: NPM Test
-          command: npm test
+          command: npm
+      - run:
+          name: Build Directory
+          command: npm run build
+      - run:
+          name: Run End To End Tests
+          command: npm run e2e
       - store_artifacts:
           path: ~/code-craftsmanship-organization/continuous-integration-with-jenkins-travis-and-circleci/artifacts
       - add_ssh_keys

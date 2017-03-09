@@ -4,6 +4,8 @@
 
 [![Coverage Status](https://coveralls.io/repos/github/jbelmont/continuous-integration-with-jenkins-travis-and-circleci/badge.svg?branch=master)](https://coveralls.io/github/jbelmont/continuous-integration-with-jenkins-travis-and-circleci?branch=master)
 
+[![CircleCI](https://circleci.com/gh/jbelmont/continuous-integration-with-jenkins-travis-and-circleci.svg?style=svg)](https://circleci.com/gh/jbelmont/continuous-integration-with-jenkins-travis-and-circleci)
+
 ## Setup Instructions
 
 Run `npm install` in order to get all of the dependencies
