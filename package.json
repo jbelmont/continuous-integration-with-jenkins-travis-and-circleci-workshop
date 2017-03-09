@@ -20,6 +20,7 @@
     "jest:test": "jest",
     "test:action:creators": "jest __tests__/actions.test.js",
     "test:reducers": "jest __tests__/reducers.test.js",
+    "start:rethinkdb": "rethinkdb --bind all --http-port 9090 &",
     "e2e": "node --harmony test/nightwatch.runner.js",
     "ava:unit:test": "nyc ava test/unit/*.js",
     "ava:integration:test": "nyc ava test/integration/*.js",
@@ -141,5 +142,8 @@
     "testPathIgnorePatterns": [
       "/test/"
     ]
+  },
+  "babel": {
+    "presets": ["es2015", "react", "stage-0"]
   }
 }

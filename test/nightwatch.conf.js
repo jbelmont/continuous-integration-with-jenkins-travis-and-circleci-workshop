@@ -13,11 +13,12 @@ module.exports = {
   'selenium' : {
     'start_process' : true,
     'host': '127.0.0.1',
-    'server_path' : 'node_modules/selenium-server/lib/runner/selenium-server-standalone-3.0.1.jar',
+    'server_path' : 'node_modules/selenium-server/lib/runner/selenium-server-standalone-3.1.0.jar',
     'log_path' : '',
     'port' : 4444,
     'cli_args' : {
-      'webdriver.chrome.driver' : require('chromedriver').path
+      'webdriver.chrome.driver' : require('chromedriver').path,
+      'phantomjs.cli.args': '--web-security=false --ignore-ssl-errors=true --load-images=true --local-to-remote-url-access=true --debug=true'
     }
   },
 

@@ -41,7 +41,75 @@ test('check error object from errorHandler with proper arguments', t => {
 
 ## Automate Component Tests
 
+* Component/Integration/Subsystem tests verify portions of a system
+    * May require fully installed system or external dependencies
+        * Databases
+        * file systems
+        * network endpoints
+* Integration tests are usually longer running tests than Unit Tests
+
+Example Integration Test using Ava.js, Supertest and Nock
+
+```javascript
+let postScope, payload, deleteScope;
+test.before(() => {
+  const requestGetHeaders = {
+    reqheaders: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    }
+  };
+
+  payload = {
+    'user': {
+      'email': 'bigkahuna@surfsup.com',
+      'first_name': 'Big',
+      'gender': 'Male',
+      'id': 57,
+      'last_name': 'Kahuna'
+    }
+  };
+
+  postScope = nock(requestURL, requestGetHeaders)
+              .get(addUserUrl)
+              .reply(201, payload);
+
+  deleteScope = nock(requestURL)
+                .delete(removeUserUrl)
+                .reply(204);
+});
+
+test.after('cleanup', () => {
+  nock.cleanAll();
+});
+
+test.cb('add user url should return 201 response and the newly added user', t => {
+  t.plan(3);
+  const created = responseCodes['created'];
+  const req = request.agent(requestURL);
+  req
+    .get(addUserUrl)
+      .set({
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      })
+      .expect(res => {
+        t.is(res.status, created, '201 Status Code should be returned');
+        t.deepEqual(res.body, payload);
+      })
+      .end(() => {
+        t.is(postScope.isDone(), true, `POST ${addUserUrl} Nock Spy called`);
+        t.end();
+      });
+});
+```
+
+* Integration level tests typically use more dependencies than unit tests
+    * Integration tests don't use as many dependencies as a System Test though
+
 ## Automate System Tests
+
+
 
 ## Categorize Developer Tests
 
