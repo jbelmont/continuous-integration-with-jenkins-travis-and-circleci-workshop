@@ -69,8 +69,8 @@ class AdvancedTech extends Component {
     const gender = select.options[select.selectedIndex].value;
     const id = Math.max.apply(Math, this.state.users.map(user => user['id'])) + 1;
     const newUser = {
-      first_name: firstName,
-      last_name: lastName,
+      firstName,
+      lastName,
       email,
       gender,
       id
@@ -152,7 +152,7 @@ class AdvancedTech extends Component {
               <option value={FEMALE}>{FEMALE}</option>
             </FormControl>
           </FormGroup>
-          <Button bsStyle="primary" bsSize="large" type="submit">{ADD}</Button>
+          <Button bsStyle="primary" bsSize="large" id="addUserBtn" type="submit">{ADD}</Button>
         </form>
       );
     }
@@ -169,7 +169,7 @@ class AdvancedTech extends Component {
                     gender={info['gender']}
                     data-id={info['id']}
                     id={info['id']}
-                    key={info['id']}
+                    key={index}
                     index={index}
                     props={this.props}
                     trashBinSvgPath={this.state.trashBinSvgPath}
@@ -184,6 +184,7 @@ class AdvancedTech extends Component {
         <div className="add-user-btn-container">
           <Button bsStyle="primary"
                   bsSize="large"
+                  id="addSomeUserBtn"
                   onClick={this.togglePopDown}>{!showAddPopDown && ADD_USER || CLOSE}
           </Button>
         </div>

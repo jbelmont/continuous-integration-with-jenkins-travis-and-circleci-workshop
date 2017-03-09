@@ -92,6 +92,8 @@
     "enzyme": "^2.7.1",
     "eslint": "^3.15.0",
     "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-standard": "^7.0.1",
+    "eslint-plugin-html": "^2.0.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.9.0",
@@ -110,7 +112,6 @@
     "jest": "^18.1.0",
     "merge-stream": "^1.0.1",
     "nightwatch": "^0.9.12",
-    "selenium-server": "^3.0.1",
     "nock": "^9.0.5",
     "node-sass": "^4.5.0",
     "nyc": "^10.1.2",
@@ -118,10 +119,10 @@
     "react-redux": "^5.0.2",
     "react-test-renderer": "^15.4.2",
     "sass-loader": "^5.0.1",
+    "selenium-server": "^3.0.1",
     "style-loader": "^0.13.1",
     "supertest": "^3.0.0",
     "testdouble": "^1.11.1",
-    "wct-local": "^2.0.12",
     "webpack": "^2.2.1"
   },
   "nyc": {

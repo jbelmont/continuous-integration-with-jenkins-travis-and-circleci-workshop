@@ -22,8 +22,8 @@ function users(state = [], action) {
     ];
   case 'REMOVE_USER':
     return [
-      ...state.slice(0, index - 1),
-      ...state.slice(index, state.length)
+      ...state.slice(0, index !== 0 && (index - 1) || 0),
+      ...state.slice(index !== 0 && index || 1, state.length)
     ];
   default:
     return state;
