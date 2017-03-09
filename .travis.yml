@@ -6,4 +6,6 @@ addons:
   rethinkdb: '2.3.5'
 before_script:
   - npm run start:rethinkdb
-after_success: "npm run coveralls"
+after_success:
+  - npm run coveralls
+  - npm run e2e
