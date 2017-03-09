@@ -12,7 +12,7 @@ module.exports = {
   'selenium' : {
     'start_process' : true,
     'host': '127.0.0.1',
-    'server_path' : 'node_modules/selenium-server/lib/runner/selenium-server-standalone-3.1.0.jar',
+    'server_path' : 'node_modules/selenium-server/lib/runner/selenium-server-standalone-3.3.0.jar',
     'log_path' : '',
     'port' : 4444,
     'cli_args' : {
@@ -30,9 +30,9 @@ module.exports = {
         'enabled' : false,
         'path' : ''
       },
-      'launch_url': 'https://localhost:3000',
+      'launch_url': 'http://localhost:3000',
       'globals': {
-        'devServerURL': 'https://localhost:' + (3000)
+        'devServerURL': 'http://localhost:' + (3000)
       }
     },
 

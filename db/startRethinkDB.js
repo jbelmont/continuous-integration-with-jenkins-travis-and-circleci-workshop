@@ -11,7 +11,7 @@ const getPortOffset = pid => {
 let rethink;
 
 module.exports.init = initialData => () => new Promise((resolve, reject) => {
-  const offset = getPortOffset(process.pid);
+  // const offset = getPortOffset(process.pid);
   const port = 28015;
   const r = require('rethinkdb');
 
