@@ -27,6 +27,9 @@ jobs:
           name: Build Directory
           command: npm run build
       - run:
+          name: Start RethinkDB
+          command: rethinkdb --bind all --http-port 9090
+      - run:
           name: Run End To End Tests
           command: npm run e2e
       - store_artifacts:
