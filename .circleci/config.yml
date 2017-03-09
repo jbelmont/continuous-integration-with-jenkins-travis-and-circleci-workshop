@@ -1,0 +1,28 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:7.6.0
+    working_directory: ~/code-craftsmanship-organization/continuous-integration-with-jenkins-travis-and-circleci
+    steps:
+      - checkout
+      - run:
+          name: Pre-Dependencies
+          command: mkdir -p ~/code-craftsmanship-organization/continuous-integration-with-jenkins-travis-and-circleci/artifacts
+      - run:
+          name: Install RethinkDB
+          command: |
+            apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 68576280 86E50310
+            echo "deb http://download.rethinkdb.com/apt jessie main" | tee /etc/apt/sources.list.d/rethinkdb.list
+            wget -qO- https://download.rethinkdb.com/apt/pubkey.gpg | apt-key add -
+            apt-get update -qq
+            apt-get install rethinkdb
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - run:
+          name: NPM Test
+          command: npm test
+      - store_artifacts:
+          path: ~/code-craftsmanship-organization/continuous-integration-with-jenkins-travis-and-circleci/artifacts
+      - add_ssh_keys
