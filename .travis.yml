@@ -10,4 +10,4 @@ before_script:
   - npm run start:rethinkdb
 after_success:
   - npm run coveralls
-  - npm run e2e
+  - npm run build && npm run e2e
