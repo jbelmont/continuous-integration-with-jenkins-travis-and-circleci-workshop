@@ -28,7 +28,7 @@ jobs:
           command: npm run build
       - run:
           name: Start RethinkDB
-          command: rethinkdb --bind all --http-port 9090
+          command: rethinkdb --bind all --http-port 9090 &
       - run:
           name: Run End To End Tests
           command: npm run e2e
