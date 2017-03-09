@@ -1,5 +1,4 @@
 require('babel-register');
-require('../config');
 
 // http://nightwatchjs.org/guide#settings-file
 module.exports = {
@@ -33,7 +32,7 @@ module.exports = {
       },
       'launch_url': 'https://localhost:3000',
       'globals': {
-        'devServerURL': 'https://localhost:' + (process.env.PORT)
+        'devServerURL': 'https://localhost:' + (3000)
       }
     },
 
