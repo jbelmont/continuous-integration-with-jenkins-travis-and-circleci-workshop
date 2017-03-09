@@ -8,7 +8,9 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
 // Load Environment Variables
-require(path.join(__dirname, 'config')).dotEnv;
+if (process.env.NODE_ENV === 'development') {
+  require(path.join(__dirname, 'config')).dotEnv;
+}
 
 const routes = require('./routes/index');
 const users = require(path.join(__dirname, 'users'));

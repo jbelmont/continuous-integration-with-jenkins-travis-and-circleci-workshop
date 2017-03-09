@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - 6
 sudo: required
+env:
+  - NODE_ENV=test
 addons:
   rethinkdb: '2.3.5'
 before_script:
