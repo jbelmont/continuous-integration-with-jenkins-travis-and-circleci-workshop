@@ -16,7 +16,7 @@ module.exports.init = initialData => () => new Promise((resolve, reject) => {
   const r = require('rethinkdb');
 
   r.net.Connection.prototype.DEFAULT_PORT = port;
-  rethink = spawn('rethinkdb', ['-o', `${port}`, '-d', `${process.cwd()}`]);
+  rethink = spawn('rethinkdb', ['--http-port', `${port}`, '--bind', 'all', '-d', `${process.cwd()}`]);
 
   if (process.env.AVA_RETHINKDB_DEBUG) {
     console.error(`==> Process ${process.pid} spawning RethinkDB server on port ${port}...`);
