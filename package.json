@@ -15,7 +15,7 @@
     "build": "npm run clean:build && gulp build",
     "clean:build": "rimraf ./static/build",
     "predev": "npm run clean:build",
-    "dev": "gulp dev",
+    "dev": "NODE_ENV=development gulp dev",
     "debug": "npm run clean:build && gulp debug",
     "jest:test": "jest",
     "test:action:creators": "jest __tests__/actions.test.js",

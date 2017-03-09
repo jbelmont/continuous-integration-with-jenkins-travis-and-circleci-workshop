@@ -15,10 +15,8 @@ const livereload = require('gulp-livereload');
 const eslint = require('gulp-eslint');
 
 // Load Environment constiables
-require('dotenv').config();
-const webpackConfig = process.env.NODE_ENV === 'development'
-  ? require('./webpack.config.js')
-  : require('./webpack.config.prod.js');
+process.env.NODE_ENV === 'development' && require('dotenv').config();
+const webpackConfig = require('./webpack.config.js');
 
 const jsPaths = [
   'src/js/components/*.js'

@@ -37,6 +37,7 @@ const Users = ( { email, first_name, last_name, gender, id, key, index, props, t
         <span data-id={id} className="users-container-id">{id}</span>
         <svg className="users-container-trash-bin"
           xmlns="http://www.w3.org/2000/svg"
+          key={key}
           onClick={event => remove(event)}
         >
           <use xlinkHref={trashBinSvgPath}></use>
