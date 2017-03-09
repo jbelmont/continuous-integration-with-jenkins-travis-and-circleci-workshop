@@ -19,6 +19,9 @@ jobs:
           name: Install Dependencies
           command: npm install
       - run:
+          name: Run RethinkdB
+          command: rethinkdb --bind all --http-port 9090
+      - run:
           name: NPM Test
           command: npm test
       - store_artifacts:
