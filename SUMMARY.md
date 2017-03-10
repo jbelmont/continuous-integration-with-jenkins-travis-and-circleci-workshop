@@ -12,4 +12,5 @@
   * [Continuous Deployment](/docs/continuous-integration/continuousDeployment.md)
   * [Continuous Feedback](/docs/continuous-integration/continuousFeedback.md)
 * [Jenkins](/docs/jenkins/jenkins.md)
-* [Travis CI](/docs/travis-ci/travisCI.md)
+* [Travis CI](/docs/travis-ci/travis-ci.md)
+* [Circle CI](/docs/circle-ci/circle-ci.md)
