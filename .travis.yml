@@ -15,6 +15,7 @@ before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3 # give xvfb some time to start
+  - rethinkdb --bind all --http-port 9090 & # start rethinkdb on background process
 after_success:
   - npm run coveralls
   - npm run build && npm run e2e
