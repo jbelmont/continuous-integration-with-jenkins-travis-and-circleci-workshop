@@ -6,7 +6,12 @@ env:
   - NODE_ENV=test
 addons:
   rethinkdb: '2.3.5'
+  apt:
+    packages:
+      - oracle-java8-installer
+      - oracle-java8-set-default
 before_script:
   - npm run start:rethinkdb
 after_success:
   - npm run coveralls
+  - npm run build && npm run e2e
