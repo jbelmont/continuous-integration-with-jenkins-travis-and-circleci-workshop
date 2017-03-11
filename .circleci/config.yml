@@ -18,6 +18,9 @@ jobs:
             apt-get -y update -qq
             apt-get -y install rethinkdb
       - run:
+          name: Install Latest Chrome
+          command: bash scripts/get-latest-chrome.sh
+      - run:
           name: Install Dependencies
           command: npm install
       - run:
