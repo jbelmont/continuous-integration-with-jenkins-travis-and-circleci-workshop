@@ -5,18 +5,30 @@
 ## Sample Travis yml script
 
 ```yml
+dist: trusty
+sudo: required
 language: node_js
 node_js:
   - 6
-sudo: required
 env:
   - NODE_ENV=test
 addons:
   rethinkdb: '2.3.5'
+  sources:
+    - google-chrome
+  apt:
+    packages:
+      - oracle-java8-installer
+      - oracle-java8-set-default
+      - google-chrome-stable
 before_script:
-  - npm run start:rethinkdb
+  - export CHROME_BIN=chromium-browser
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - sleep 3
 after_success:
   - npm run coveralls
+  - npm run build && npm run e2e
 ```
 
 ## Integrate Travis CI with Github

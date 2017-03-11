@@ -21,6 +21,7 @@ jobs:
   build:
     docker:
       - image: node:7.6.0
+      - image: openjdk:8
     working_directory: ~/code-craftsmanship-organization/continuous-integration-with-jenkins-travis-and-circleci
     steps:
       - checkout
@@ -35,6 +36,9 @@ jobs:
             wget -qO- https://download.rethinkdb.com/apt/pubkey.gpg | apt-key add -
             apt-get -y update -qq
             apt-get -y install rethinkdb
+      - run:
+          name: Install Latest Chrome
+          command: bash scripts/get-latest-chrome.sh
       - run:
           name: Install Dependencies
           command: npm install
