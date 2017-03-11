@@ -10,6 +10,7 @@ addons:
     packages:
       - oracle-java8-installer
       - oracle-java8-set-default
+      - google-chrome-stable
 before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
