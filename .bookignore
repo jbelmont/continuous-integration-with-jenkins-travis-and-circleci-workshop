@@ -1,4 +1,6 @@
 /bin
+/.circleci
+/.travis.yml
 /ca
 /config
 /constants
