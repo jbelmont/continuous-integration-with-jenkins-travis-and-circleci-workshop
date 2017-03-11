@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: node:7.6.0
+      - image: openjdk:8
     working_directory: ~/code-craftsmanship-organization/continuous-integration-with-jenkins-travis-and-circleci
     steps:
       - checkout
