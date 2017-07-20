@@ -9,7 +9,7 @@ module.exports = {
 
     browser
       .click('.users-container .users-container-trash-bin')
-      .assert.elementNotPresent('[data-email="handersonj@about.com"]')
+      .assert.elementNotPresent('[data-email="tcox0@dion.ne.jp"]')
 
     browser
       .click('#addSomeUserBtn')
