@@ -25,6 +25,7 @@
     "ava:unit:test": "nyc ava test/unit/*.js",
     "ava:integration:test": "nyc ava test/integration/*.js",
     "test": "nyc ava test/unit/*.js test/integration/*.js",
+    "posttest": "nyc $npm_package_config_report",
     "postava:test": "nyc $npm_package_config_report",
     "lint": "eslint $npm_package_config_lint",
     "lint:fix": "eslint --fix $npm_package_config_lint",
