@@ -1,0 +1,477 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Continuous Integration · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="continuousDeployment.html" />
+    
+    
+    <link rel="prev" href="continuousTesting.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="ci.html">
+            
+                <a href="ci.html">
+            
+                    
+                    Continuous Integration Core Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="gettingStarted.html">
+            
+                <a href="gettingStarted.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction to CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="reducingRisks.html">
+            
+                <a href="reducingRisks.html">
+            
+                    
+                    Reducing Risks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="buildingSoftwareWithCodeChanges.html">
+            
+                <a href="buildingSoftwareWithCodeChanges.html">
+            
+                    
+                    Building Software with Code Changes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="ciForDatabaseIntegration.html">
+            
+                <a href="ciForDatabaseIntegration.html">
+            
+                    
+                    CI for Database Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="continuousTesting.html">
+            
+                <a href="continuousTesting.html">
+            
+                    
+                    Continuous Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.7" data-path="continuousInspection.html">
+            
+                <a href="continuousInspection.html">
+            
+                    
+                    Continuous Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="continuousDeployment.html">
+            
+                <a href="continuousDeployment.html">
+            
+                    
+                    Continuous Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="continuousFeedback.html">
+            
+                <a href="continuousFeedback.html">
+            
+                    
+                    Continuous Feedback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../jenkins/jenkins.html">
+            
+                <a href="../jenkins/jenkins.html">
+            
+                    
+                    Jenkins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../travis-ci/travis-ci.html">
+            
+                <a href="../travis-ci/travis-ci.html">
+            
+                    
+                    Travis CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../circle-ci/circle-ci.html">
+            
+                <a href="../circle-ci/circle-ci.html">
+            
+                    
+                    Circle CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Continuous Integration</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="continuous-inspection">Continuous Inspection</h1>
+<ul>
+<li><a href="#definition-of-cyclomatic-complexity">Definition of Cyclomatic Complexity</a></li>
+<li><a href="#reduce-code-complexity">Reduce Code Complexity</a></li>
+<li><a href="#dynamic-link-libraries-and-shared-libraries">Dynamic Link Libraries and Shared Libraries</a></li>
+<li><a href="#perform-design-reviews-continuously">Perform Design Reviews Continuously</a></li>
+<li><a href="#maintain-organizational-standards-with-code-audits">Maintain Organizational Standards with Code Audits</a></li>
+<li><a href="#reduce-duplicate-code">Reduce Duplicate Code</a></li>
+<li><a href="#assess-code-coverage">Assess Code Coverage</a></li>
+</ul>
+<h2 id="definition-of-cyclomatic-complexity">Definition of Cyclomatic Complexity</h2>
+<p><a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity" target="_blank">Cyclomatic Complexity</a></p>
+<ul>
+<li>Cyclomatic complexity is a software metric (measurement), used to indicate the complexity of a program.</li>
+<li>It is a quantitative measure of the number of linearly independent paths through a program&apos;s source code.</li>
+</ul>
+<h2 id="reduce-code-complexity">Reduce Code Complexity</h2>
+<ul>
+<li>Reduce cyclomatic complexity in your code base by leveraging automated inspectors<ul>
+<li>JavaScript<ul>
+<li>Eslint is a Linter but can do cyclomatic analysis to a degree</li>
+<li>Google Closure Compiler</li>
+</ul>
+</li>
+<li>Java<ul>
+<li>CheckStyle</li>
+<li>PMD</li>
+</ul>
+</li>
+<li>.NET<ul>
+<li>FxCop</li>
+<li>NDepend</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Static Analyzers can identify areas of your code with higher complexity.</li>
+<li>Run these inspectors from your automated build.</li>
+</ul>
+<h2 id="dynamic-link-libraries-and-shared-libraries">Dynamic Link Libraries and Shared Libraries</h2>
+<ul>
+<li>During a compilation process several types of assemblies can be produced<ul>
+<li>An executable file (*.exe, a binary file)</li>
+<li>A dynamic link library file (*.dll)<ul>
+<li>Basic a Shared Library</li>
+</ul>
+</li>
+<li>A lib is a unit of code that is bundled within your application executable.</li>
+</ul>
+</li>
+</ul>
+<h2 id="perform-design-reviews-continuously">Perform Design Reviews Continuously</h2>
+<ul>
+<li>Use tools that can help find assemblies that are highly dependent on other packages and lead to brittle architecture</li>
+</ul>
+<h2 id="maintain-organizational-standards-with-code-audits">Maintain Organizational Standards with Code Audits</h2>
+<ul>
+<li>Reduce the amount of duplicate code in a code base through special tools</li>
+<li>Tools can pinpoint areas of higher code duplication based on custom thresholds</li>
+<li>Use tools like this for targeted refactorings</li>
+</ul>
+<h2 id="assess-code-coverage">Assess Code Coverage</h2>
+<p>Typical Metrics by Code Coverage Tools like Istanbul</p>
+<ul>
+<li>Statements: How many of the statements in you code are executed.</li>
+<li>Branches: Conditional statements create branches of code which may not be executed (e.g. if/else).<ul>
+<li>This metric tells you how many of your branches have been executed.</li>
+</ul>
+</li>
+<li>Functions: The proportion of the functions you have defined which have been called.</li>
+<li>Lines: The proportion of lines of code which have been executed.</li>
+</ul>
+<p>These metrics can help identify areas of your code base that need more tests.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="continuousTesting.html" class="navigation navigation-prev " aria-label="Previous page: Continuous Testing">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="continuousDeployment.html" class="navigation navigation-next " aria-label="Next page: Continuous Deployment">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Continuous Integration","level":"1.2.7","depth":2,"next":{"title":"Continuous Deployment","level":"1.2.8","depth":2,"path":"docs/continuous-integration/continuousDeployment.md","ref":"docs/continuous-integration/continuousDeployment.md","articles":[]},"previous":{"title":"Continuous Testing","level":"1.2.6","depth":2,"path":"docs/continuous-integration/continuousTesting.md","ref":"docs/continuous-integration/continuousTesting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/continuous-integration/continuousInspection.md","mtime":"2018-01-25T01:19:43.539Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-17T18:27:20.927Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

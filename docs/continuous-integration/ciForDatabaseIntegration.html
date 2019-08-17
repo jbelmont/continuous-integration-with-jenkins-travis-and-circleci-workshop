@@ -1,0 +1,514 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CI for Database Integration · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="continuousTesting.html" />
+    
+    
+    <link rel="prev" href="buildingSoftwareWithCodeChanges.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="ci.html">
+            
+                <a href="ci.html">
+            
+                    
+                    Continuous Integration Core Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="gettingStarted.html">
+            
+                <a href="gettingStarted.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction to CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="reducingRisks.html">
+            
+                <a href="reducingRisks.html">
+            
+                    
+                    Reducing Risks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="buildingSoftwareWithCodeChanges.html">
+            
+                <a href="buildingSoftwareWithCodeChanges.html">
+            
+                    
+                    Building Software with Code Changes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="ciForDatabaseIntegration.html">
+            
+                <a href="ciForDatabaseIntegration.html">
+            
+                    
+                    CI for Database Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="continuousTesting.html">
+            
+                <a href="continuousTesting.html">
+            
+                    
+                    Continuous Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="continuousInspection.html">
+            
+                <a href="continuousInspection.html">
+            
+                    
+                    Continuous Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="continuousDeployment.html">
+            
+                <a href="continuousDeployment.html">
+            
+                    
+                    Continuous Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="continuousFeedback.html">
+            
+                <a href="continuousFeedback.html">
+            
+                    
+                    Continuous Feedback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../jenkins/jenkins.html">
+            
+                <a href="../jenkins/jenkins.html">
+            
+                    
+                    Jenkins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../travis-ci/travis-ci.html">
+            
+                <a href="../travis-ci/travis-ci.html">
+            
+                    
+                    Travis CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../circle-ci/circle-ci.html">
+            
+                <a href="../circle-ci/circle-ci.html">
+            
+                    
+                    Circle CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >CI for Database Integration</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ci-for-database-integration">CI for Database Integration</h1>
+<ul>
+<li>Automate Database Integration</li>
+<li>Use a Local Database Sandbox</li>
+<li>Use a version control repository to share database assets</li>
+<li>Give Developers capability to modify the database</li>
+<li>Make DBA part of the development team</li>
+</ul>
+<h2 id="automate-database-integration">Automate Database Integration</h2>
+<p>Repeatable Database Integration Activities:</p>
+<ul>
+<li>Drop Database</li>
+<li>Create Database</li>
+<li>Insert System Data</li>
+<li>Insert Test Data</li>
+<li>Migrate Database and data</li>
+<li>Setup database instances in multiple environments</li>
+<li>Modify column attributes<ul>
+<li>this would be done for a relational database</li>
+</ul>
+</li>
+<li>Modify test data</li>
+<li>Modify stored procedures and triggers and functions<ul>
+<li>this is done for relational databases like SQL Server, Oracle, MySQL, PostgresSQL, etc</li>
+</ul>
+</li>
+<li>Obtain access to different environments</li>
+<li>Backup restore large data sets</li>
+</ul>
+<h4 id="creating-your-database">Creating your database</h4>
+<p>An example of set of functions that connect to RethinkDB insert test data if necessary and retrieve data</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">dbActions</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> connectToRethinkDBServer()
+    .then((connection) =&gt; {
+      DB.connection = connection;
+      <span class="hljs-keyword">return</span> doesRethinkTableExist()
+        .then(exists =&gt; exists);
+    })
+    .then((databaseExists) =&gt; {
+      <span class="hljs-keyword">if</span> (!databaseExists) {
+        <span class="hljs-keyword">return</span> createUsers(databaseExists)
+          .then(() =&gt; createTable())
+          .then(() =&gt; insertData());
+      }
+    })
+    .then(() =&gt; checkIfTableExists()
+        .then((value) =&gt; {
+          <span class="hljs-keyword">if</span> (value &gt; <span class="hljs-number">0</span>) {
+            <span class="hljs-keyword">return</span> getUsers()
+              .then(values =&gt; values);
+          }
+          insertData()
+              .then(() =&gt; getUsers()
+                  .then(values =&gt; values));
+        }));
+}
+</code></pre>
+<h4 id="manipulating-your-database">Manipulating your database</h4>
+<p>You can use tools/scripts to seed data into your database and to delete the database</p>
+<h2 id="use-a-local-database-sandbox">Use a Local Database Sandbox</h2>
+<ul>
+<li>Developers can then create a database &quot;sandbox&quot; to make and test database changes without affection others</li>
+<li>With this step it is easier for developers to recreate a database and run tests on their machines</li>
+</ul>
+<h2 id="use-a-version-control-repository-to-share-database-assets">Use a version control repository to share database assets</h2>
+<p>Database Assets:</p>
+<ul>
+<li>DDL (Data Definition Language) to drop and create tables and view including constraints and triggers</li>
+<li>Stored Procedures and Functions<ul>
+<li>Provided this is a relational database</li>
+<li>Otherwise a set of functions or API endpoints that can manipulate data<ul>
+<li><code>POST /api/v1/insertData</code> is an example endpoint to insert data</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Entity relationship diagrams</li>
+<li>Test data for different environments</li>
+<li>Specific database configurations</li>
+</ul>
+<h2 id="continuous-database-integration">Continuous Database Integration</h2>
+<p><strong>Automating your database integration and incorporating into build scripts helps keep other developers in sync</strong></p>
+<h2 id="give-developers-the-capability-to-modify-the-database">Give Developers the capability to modify the database</h2>
+<p>This empowers developers provided they have the expertise to do so to avoid the DBA being the bottleneck
+<strong>Word of caution with this added power comes responsibility as well on the developers side</strong></p>
+<h2 id="make-the-dba-a-part-of-the-development-team">Make the DBA a part of the development team</h2>
+<ul>
+<li>The DBA should be able to run the same automated build including a database rebuild that developer can do</li>
+<li>Make the DBA a part of the team<ul>
+<li>This can help integrate teams instead of create silos</li>
+<li>Code goes over the wire so the speak</li>
+</ul>
+</li>
+</ul>
+<h2 id="database-integration-and-integration">Database integration and integration</h2>
+<ul>
+<li>Test your database<ul>
+<li>Relational Databases can be tested (PL/SQL, SQLUNIT) etc</li>
+</ul>
+</li>
+<li>Inspect your database</li>
+</ul>
+<h2 id="deployment">Deployment</h2>
+<p>The goal of Continuous Database Integration is to treat your database source code and other source code the same.
+Deployment processes will deploy your database to your development and test database instances.</p>
+<h2 id="feedback-and-documentation">Feedback and Documentation</h2>
+<ul>
+<li>Your CI server should be communicating build status like build failure and emailing the necessary individuals.</li>
+<li>Documentation is important and can be part of the build status</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="buildingSoftwareWithCodeChanges.html" class="navigation navigation-prev " aria-label="Previous page: Building Software with Code Changes">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="continuousTesting.html" class="navigation navigation-next " aria-label="Next page: Continuous Testing">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CI for Database Integration","level":"1.2.5","depth":2,"next":{"title":"Continuous Testing","level":"1.2.6","depth":2,"path":"docs/continuous-integration/continuousTesting.md","ref":"docs/continuous-integration/continuousTesting.md","articles":[]},"previous":{"title":"Building Software with Code Changes","level":"1.2.4","depth":2,"path":"docs/continuous-integration/buildingSoftwareWithCodeChanges.md","ref":"docs/continuous-integration/buildingSoftwareWithCodeChanges.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/continuous-integration/ciForDatabaseIntegration.md","mtime":"2018-01-25T01:19:43.539Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-17T18:27:20.927Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

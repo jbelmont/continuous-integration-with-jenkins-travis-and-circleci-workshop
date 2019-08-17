@@ -1,0 +1,532 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introduction to CI · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="reducingRisks.html" />
+    
+    
+    <link rel="prev" href="gettingStarted.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="ci.html">
+            
+                <a href="ci.html">
+            
+                    
+                    Continuous Integration Core Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="gettingStarted.html">
+            
+                <a href="gettingStarted.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction to CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="reducingRisks.html">
+            
+                <a href="reducingRisks.html">
+            
+                    
+                    Reducing Risks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="buildingSoftwareWithCodeChanges.html">
+            
+                <a href="buildingSoftwareWithCodeChanges.html">
+            
+                    
+                    Building Software with Code Changes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="ciForDatabaseIntegration.html">
+            
+                <a href="ciForDatabaseIntegration.html">
+            
+                    
+                    CI for Database Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="continuousTesting.html">
+            
+                <a href="continuousTesting.html">
+            
+                    
+                    Continuous Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="continuousInspection.html">
+            
+                <a href="continuousInspection.html">
+            
+                    
+                    Continuous Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="continuousDeployment.html">
+            
+                <a href="continuousDeployment.html">
+            
+                    
+                    Continuous Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="continuousFeedback.html">
+            
+                <a href="continuousFeedback.html">
+            
+                    
+                    Continuous Feedback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../jenkins/jenkins.html">
+            
+                <a href="../jenkins/jenkins.html">
+            
+                    
+                    Jenkins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../travis-ci/travis-ci.html">
+            
+                <a href="../travis-ci/travis-ci.html">
+            
+                    
+                    Travis CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../circle-ci/circle-ci.html">
+            
+                <a href="../circle-ci/circle-ci.html">
+            
+                    
+                    Circle CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Introduction to CI</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="introduction-to-continuous-integration">Introduction to Continuous Integration</h1>
+<ol>
+<li>Commit Code Frequently</li>
+<li>Don&apos;t Commit Broken Code</li>
+<li>Fix Broken Builds Immediately</li>
+<li>Write automated developer tests</li>
+<li>All Tests and inspections must pass the build.</li>
+<li>Developers run private builds on their machines.</li>
+<li>Avoid if possible getting broken code.</li>
+</ol>
+<h2 id="the-value-of-ci">The value of CI</h2>
+<ul>
+<li>Reduce Risks<ul>
+<li>The health of your software becomes measurable</li>
+<li>Reduce developer assumptions<ol>
+<li>Don&apos;t Rely on Environment variables.</li>
+<li>Don&apos;t rely on certain configuration files set on your machine.</li>
+<li>The build is built cleanly and independently from each developer&apos;s machine.</li>
+<li>It avoid the classic phrase but it works on my machine.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Reduce repetitive manual processes<ol>
+<li>The process runs the same way every time</li>
+<li>An ordered process is followed.<ol>
+<li>Compile Step</li>
+<li>Testing</li>
+<li>Reports Generated</li>
+</ol>
+</li>
+<li>The process runs every time a commit is pushed to the version control system.
+<strong>Frees developers to work on higher value work and reduces possible mistakes</strong></li>
+</ol>
+</li>
+<li>Generate deployable software anytime and anywhere</li>
+<li>Enable better project visibility</li>
+<li>Establish confidence in your software with the development team</li>
+</ul>
+<h2 id="what-prevents-teams-from-using-ci">What prevents teams from using CI?</h2>
+<ul>
+<li>Misguided belief that there is too much overheard to setting a CI process<ul>
+<li>Either your manual processses will control you or you can manage your CI process</li>
+<li>Either way you going to have to do these things anyways</li>
+</ul>
+</li>
+</ul>
+<h2 id="how-to-get-something-into-ci">How to get something into CI.</h2>
+<ul>
+<li>Identify a particular process that can benefit from automation.</li>
+<li>Write a build script that makes the process both repeatable and consistent</li>
+<li>Share you process by committing it into your version control system</li>
+<li>Make it continuous by adding it to the CI server</li>
+</ul>
+<h2 id="ci-complements-other-development-practices">CI complements other development practices</h2>
+<ul>
+<li>Developer Testing<ul>
+<li>Testing framework or libraries can be added to the CI server</li>
+<li>Enforcing coding standards<ul>
+<li>The CI server can be configured to enforce coding standards</li>
+</ul>
+</li>
+<li>Refactoring can be less problematic since the CI server can report issues once code is committed.</li>
+<li>Increase Software Ownership since developers can see if coding standards are being followed by generated reports from the build.</li>
+</ul>
+</li>
+</ul>
+<h2 id="commit-code-frequently">Commit Code Frequently</h2>
+<ul>
+<li>Make small changes<ul>
+<li>Don&apos;t try to introduce tons of changes all at once<ul>
+<li>When making pull request keep them small and focused</li>
+</ul>
+</li>
+<li>Commit after each task<ul>
+<li>Don&apos;t have huge branches but instead focused feature branches that are not long lived</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="dont-commit-broken-code">Don&apos;t Commit Broken Code</h2>
+<ul>
+<li>Encourage developers to run a private build before committing any code to the repository<ul>
+<li>The build script should run all the tests and make sure nothing is broken before code is pushed.</li>
+<li>The private build should mirror if possible what exists in the integration build to ensure nothing broken gets introduced to CI server.</li>
+</ul>
+</li>
+</ul>
+<h2 id="fix-broken-builds-immediately">Fix Broken Builds Immediately</h2>
+<ul>
+<li>Don&apos;t leave the CI server broken as this can hinder other developers from working.</li>
+<li>Builds must be fixed as soon as possible.</li>
+</ul>
+<h2 id="write-automated-developer-tests">Write Automated Developer Tests</h2>
+<ul>
+<li>Builds should be fully automated</li>
+<li>Choose testing frameworks or libraries that provide capability of running tests in an automated fashion</li>
+<li>We will show this in action with jenkins and travis ci.</li>
+</ul>
+<h2 id="all-tests-and-inspections-must-pass">All Tests and Inspections must pass</h2>
+<ul>
+<li>In a CI environment all the tests must pass</li>
+<li>All the inspections must pass as well<ul>
+<li>Linting</li>
+<li>Static Analysis</li>
+<li>Code Coverage Metrics<ul>
+<li>75% Branching</li>
+<li>70% Function Coverage</li>
+<li>70% Line Coverage</li>
+<li>70% Condition Coverage</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="run-private-builds">Run Private Builds</h2>
+<ul>
+<li>Developers need to emulate integration builds on their development environments</li>
+<li>Grab the latest code from version control</li>
+<li>Run all the tests and inspections on their machines</li>
+<li>Everything should pass before pushing commits to version control</li>
+</ul>
+<h2 id="avoid-getting-broken-code">Avoid Getting Broken Code</h2>
+<ul>
+<li>Developers should monitor the version control system and avoid if possible pulling down any broken code.</li>
+<li>Meanwhile whoever introduced the build failures should be alerted as soon as possible about the breaking changes and be working on fixing the build issues.</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="gettingStarted.html" class="navigation navigation-prev " aria-label="Previous page: Getting Started">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="reducingRisks.html" class="navigation navigation-next " aria-label="Next page: Reducing Risks">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction to CI","level":"1.2.2","depth":2,"next":{"title":"Reducing Risks","level":"1.2.3","depth":2,"path":"docs/continuous-integration/reducingRisks.md","ref":"docs/continuous-integration/reducingRisks.md","articles":[]},"previous":{"title":"Getting Started","level":"1.2.1","depth":2,"path":"docs/continuous-integration/gettingStarted.md","ref":"docs/continuous-integration/gettingStarted.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/continuous-integration/introduction.md","mtime":"2018-01-25T01:19:43.540Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-17T18:27:20.927Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

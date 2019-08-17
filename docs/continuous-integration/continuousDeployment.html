@@ -1,0 +1,457 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Continuous Deployment · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="continuousFeedback.html" />
+    
+    
+    <link rel="prev" href="continuousInspection.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="ci.html">
+            
+                <a href="ci.html">
+            
+                    
+                    Continuous Integration Core Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="gettingStarted.html">
+            
+                <a href="gettingStarted.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="introduction.html">
+            
+                <a href="introduction.html">
+            
+                    
+                    Introduction to CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="reducingRisks.html">
+            
+                <a href="reducingRisks.html">
+            
+                    
+                    Reducing Risks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="buildingSoftwareWithCodeChanges.html">
+            
+                <a href="buildingSoftwareWithCodeChanges.html">
+            
+                    
+                    Building Software with Code Changes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="ciForDatabaseIntegration.html">
+            
+                <a href="ciForDatabaseIntegration.html">
+            
+                    
+                    CI for Database Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="continuousTesting.html">
+            
+                <a href="continuousTesting.html">
+            
+                    
+                    Continuous Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="continuousInspection.html">
+            
+                <a href="continuousInspection.html">
+            
+                    
+                    Continuous Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.8" data-path="continuousDeployment.html">
+            
+                <a href="continuousDeployment.html">
+            
+                    
+                    Continuous Deployment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="continuousFeedback.html">
+            
+                <a href="continuousFeedback.html">
+            
+                    
+                    Continuous Feedback
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../jenkins/jenkins.html">
+            
+                <a href="../jenkins/jenkins.html">
+            
+                    
+                    Jenkins
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../travis-ci/travis-ci.html">
+            
+                <a href="../travis-ci/travis-ci.html">
+            
+                    
+                    Travis CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../circle-ci/circle-ci.html">
+            
+                <a href="../circle-ci/circle-ci.html">
+            
+                    
+                    Circle CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Continuous Deployment</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="continuous-deployment">Continuous Deployment</h1>
+<ul>
+<li><a href="#release-working-software-at-anytime">Release Working Software at Anytime</a></li>
+<li><a href="#run-all-tests">Run all tests</a></li>
+<li><a href="#label-a-repository%5C%27s-assets">Label a Repository&apos;s Assets</a></li>
+<li><a href="#create-build-feedback-reports">Create Build Feedback Reports</a></li>
+<li><a href="#produce-a-clean-environment">Produce a clean environment</a></li>
+<li><a href="#possess-capability-to-roll-back-release">Possess Capability to Roll Back Release</a></li>
+<li><a href="#label-each-build">Label Each Build</a></li>
+</ul>
+<h2 id="release-working-software-at-anytime">Release Working Software at Anytime</h2>
+<ul>
+<li>Run a fully automated build including compilation, all tests, inspections, packaging and deployment<ul>
+<li>This gives you the capability to release working software at any time and in a know n environment</li>
+</ul>
+</li>
+</ul>
+<h2 id="run-all-tests">Run all tests</h2>
+<ul>
+<li>Run all tests for your software</li>
+<li>Includes Unit, Integration, System, Functional, Performance, Load, Smoke and any others</li>
+<li>Running all the tests ensure your software is ready to be delivered</li>
+</ul>
+<h2 id="label-a-repositorys-assets">Label a Repository&apos;s Assets</h2>
+<ul>
+<li>Label the files for your project in version control</li>
+<li>This can be performed after a project mileston<ul>
+<li>For example in Git you can tag every release</li>
+</ul>
+</li>
+</ul>
+<h2 id="create-build-feedback-reports">Create Build Feedback Reports</h2>
+<ul>
+<li>List the changes that were made in recent builds.</li>
+<li>This can be useful for other teams in the delivery process, such as QA.</li>
+</ul>
+<h2 id="produce-a-clean-environment">Produce a clean environment</h2>
+<ul>
+<li>Remove all files, configuration changes, servers from your integration build machine<ul>
+<li>This ensures you can rebuild back to a state where your integration build is successful</li>
+</ul>
+</li>
+<li>The more scripted your build process is the better overall</li>
+</ul>
+<h2 id="possess-capability-to-roll-back-release">Possess capability to roll back release</h2>
+<ul>
+<li>Things go wrong during software development</li>
+<li>Use build labels to roll back any changes to get your software back to working state</li>
+</ul>
+<h2 id="label-each-build">Label Each Build</h2>
+<ul>
+<li>Label the binary artifacts of a build distribution in version control</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="continuousInspection.html" class="navigation navigation-prev " aria-label="Previous page: Continuous Integration">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="continuousFeedback.html" class="navigation navigation-next " aria-label="Next page: Continuous Feedback">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Continuous Deployment","level":"1.2.8","depth":2,"next":{"title":"Continuous Feedback","level":"1.2.9","depth":2,"path":"docs/continuous-integration/continuousFeedback.md","ref":"docs/continuous-integration/continuousFeedback.md","articles":[]},"previous":{"title":"Continuous Integration","level":"1.2.7","depth":2,"path":"docs/continuous-integration/continuousInspection.md","ref":"docs/continuous-integration/continuousInspection.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docs/continuous-integration/continuousDeployment.md","mtime":"2018-01-25T01:19:43.539Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-17T18:27:20.927Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
